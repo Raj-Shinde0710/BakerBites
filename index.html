@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BakerBites - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body id="home-page">
+
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">BakerBites</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#promotions">Offers</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="cart-icon"><a href="cart.html"><i class="fas fa-shopping-cart"></i><span id="cart-count">0</span></a></li>
+                <li><a href="dashboard.html" style="font-size: 1.5rem;"><i class="fas fa-chart-line"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Artisan Bakes, Freshly Made</h2>
+            <p>Experience the warmth and aroma of handcrafted bread and pastries.</p>
+            <a href="products.html" class="cta-button">Explore Our Menu</a>
+        </div>
+    </section>
+
+    <section id="about" class="section-container">
+        <h2>Our Story</h2>
+        <div class="about-content">
+            <p>Since 2010, we've been dedicated to the art of baking. We use only the finest local ingredients to create delicious, high-quality products that bring a taste of home to every bite. Our mission is simple: to bake happiness, one loaf at a time.</p>
+        </div>
+    </section>
+
+    <section id="stats" class="stats-container">
+        <div class="stat-item">
+            <div class="counter" data-target="5000">0</div>
+            <p>Happy Customers</p>
+        </div>
+        <div class="stat-item">
+            <div class="counter" data-target="15">0</div>
+            <p>Years of Experience</p>
+        </div>
+        <div class="stat-item">
+            <div class="counter" data-target="200">0</div>
+            <p>Products Sold Daily</p>
+        </div>
+    </section>
+
+    <section id="testimonials" class="section-container">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial-card">
+            <p>"The best sourdough I've ever had! The staff is so friendly and the quality is unmatched."</p>
+            <p class="customer-name">- Sarah M.</p>
+        </div>
+        <div class="testimonial-card">
+            <p>"Their chocolate croissants are simply divine. A perfect treat every time."</p>
+            <p class="customer-name">- John P.</p>
+        </div>
+    </section>
+
+    <section id="promotions" class="section-container">
+        <h2>Special Offers</h2>
+        <div class="promotion-card">
+            <h3>Fresh Bread Tuesdays!</h3>
+            <p>Buy any two loaves of bread and get a third one for 50% off. Limited time offer!</p>
+        </div>
+    </section>
+
+    <section id="contact" class="section-container">
+        <h2>Visit Us Today!</h2>
+        
+        <div class="contact-grid">
+            <div class="form-container">
+                <h3>Send us a message!</h3>
+                <form id="contact-form">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="cta-button">Send Message</button>
+                </form>
+            </div>
+            
+            <div class="map-container">
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.2805318876035!2d73.7427767251949!3d18.65140328246778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2ba0236e62d6d%3A0xaf82683765815de9!2sPimpri%20Chinchwad%20College%20Of%20Engineering%20%26%20Research%2C%20Ravet%2C%20Pimpri-Chinchwad%2C%20Maharashtra%20412101!5e0!3m2!1sen!2sin!4v1758560011717!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> </div>
+        </div>
+    </section>
+
+    <div id="promo-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">×</span>
+            <h3>Limited Time Offer!</h3>
+            <p>Get a free coffee with any pastry purchase over ₹100. Don't miss out!</p>
+            <a href="products.html" class="cta-button">Shop Now</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 BakerBites. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
